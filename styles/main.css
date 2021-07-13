@@ -11,7 +11,33 @@
     #header p{
         margin: 0;
     }
-/*Small Devices - Smartphones*/
+/*´Navigation*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #8cd linear-gradient(#ccc, #eac, #ace);
+}
+
+nav{
+    display: block;
+    padding: .5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a:hover{
+    background-color: rgba(102, 102, 102, .5);
+}
+
+
 
 /*Medium Devices - Tablets*/
 
