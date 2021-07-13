@@ -37,6 +37,10 @@ nav{
     background-color: rgba(102, 102, 102, .5);
 }
 
+.menu.active{
+    max-height: 600;
+}
+
 
 
 /*Medium Devices - Tablets*/
