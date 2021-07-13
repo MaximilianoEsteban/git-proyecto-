@@ -1,16 +1,16 @@
 /*Content First - Mobile First*/
     /*General Rules*/
-        *{
-            box-sizing: border-box;
-            font-family: 'segoe ui', 'calibri', sans-serif;
-        }
-        body,
-        h1,
-        h2,
-        h3,
-        #header p{
-            margin: 0;
-        }
+    *{
+        box-sizing: border-box;
+        font-family: 'segoe ui', 'calibri', sans-serif;
+    }
+    body,
+    h1,
+    h2,
+    h3,
+    #header p{
+        margin: 0;
+    }
 /*Small Devices - Smartphones*/
 
 /*Medium Devices - Tablets*/
