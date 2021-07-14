@@ -22,12 +22,14 @@
     </nav>
      
     <nav>
-        <ul>
-        <li><a href="Inicio">Inicio</a></li>
-        <li><a href="Images">Galeria</a></li>
-        <li><a href="Contacto">Contacto</a></li>
-    </ul>
-</nav>
+        <a href="#" class="logo">git</a>
+        <button class="btn">&equiv;</button>
+        <ul class="menu">
+            <li><a href="#" title="Inicio">Inicio</a></li>
+            <li><a href="gallery.html" title="Galeria">Galeria</a></li>
+            <li><a href="#contact" title="Contacto">Contacto</a></li>
+        </ul>
+    </nav>
     <header id="header">
         <h1>GIT</h1>
         <p>Desarrollo Colaborativo</p>
@@ -85,15 +87,61 @@
     <section>
         <h2>Apuntadores de GIT</h2>
         <article>
-            <h3>Head</h3>
+            <h3>HEAD</h3>
             <p>
-                Apuntador movil
-
-
+                Apuntador movil que permite al usuario desplazarse dentro del historial de cambios. Se utiliza como referente de la posicion actual dentro del arbol de confirmaciones y se puede utilizar de la siguiente manera: <strong>HEAD^</strong> o <strong>HEAD~2</strong> para indicar a cuantos commit ancestros o anteriores debemos movernos.  
             </p>
         </article>
-
+        <article>
+            <h3>BRANCH</h3>
+            <p>
+                <strong> Apuntador dinamico que nos permte regresar al ultimo commit de una historia determinada, se desplaza automaticamente cada vez que generamos un commit. Podemos crear las ramas que sean necesarias, pero a pesar de las confirmaciones, todas van a tener un commit en comun.</strong>
+            </p>
+        </article>
     </section>
+    <footer id="footer">
+        <div class="social">
+            <a href="https://github.com/c215714n/git-mj-20" target="_blank">GitHub</a>
+            <a href="https://gitlab.com/c215714n/git-mj-20" target="_blank">GitLab</a>
+            <a href="https://bitbucket.com/c215714n/git-mj-20" target="_blank">BitBucket</a>
+        </div>
+        <for id="contact">
+            <h2>Contactanos</h2>
+        </for>
+        <table class="colabs">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cristian Racedo</td>
+                    <td>c215714n</td>
+                    <td>cristiandracedo@hotmail.com</td>
+                </tr>
+                <tr>
+                    <th>Linus Torvald</th>
+                    <td>Tux</td>
+                    <td>lt@linux.com</td>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>Windows</td>
+                    <td>bg@microsoft.com</td>
+                </tr>
+                <!-- Ingrese sus datos AQUI -->
+                <tr>
+                    <td>Maximiliano Esteban</td>
+                    <td>MaximilianoEsteban</td>
+                    <td>maxesteban@hotmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
     <script src="scripts/main.js"></script>
-</body>
-</html>
+
+    </body>
+    </html>
