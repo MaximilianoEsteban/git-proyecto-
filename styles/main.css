@@ -69,6 +69,23 @@ nav a{
 
 /*Medium Devices - Tablets*/
 
+@media screen and (min-width: 768px){
+    nav .btn{
+        display: none;
+    }
+    
+    .menu{
+        width: auto;
+        max-height: 900px;
+        display: flex;
+    }   
+
+}
+
 /*Large Devices - Desktop*/
 
 /*Extra Large Devices - HD Desktop*/
+
+@media screen and (min-width: 1200px){
+    nav{justify-content: space-around;}     
+}
