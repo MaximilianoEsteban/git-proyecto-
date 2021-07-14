@@ -1,50 +1,76 @@
 /*Content First - Mobile First*/
     /*General Rules*/
-    *{
-        box-sizing: border-box;
-        font-family: 'segoe ui', 'calibri', sans-serif;
-    }
-    body,
-    h1,
-    h2,
-    h3,
-    #header p{
-        margin: 0;
-    }
-/*´Navigation*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #8cd linear-gradient(#ccc, #eac, #ace);
-}
-
-nav{
-    display: block;
-    padding: .5rem;
-    color: #333;
-    text-decoration: none;
-}
-
-.menu{
-    width: 100%;
-    padding: 0;
-    list-style: none;
-}
-
-.menu a:hover{
-    background-color: rgba(102, 102, 102, .5);
-}
-
-.menu.active{
-    max-height: 900px;
-}
-
-
+        *{
+            box-sizing: border-box;
+            font-family: 'segoe ui', 'calibri', sans-serif;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        #header p,
+        .menu{
+            margin: 0;
+        }
+    /*Navigation*/
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background: #8cd linear-gradient(#eac, #ace);
+        }
+        nav a{
+            display: block;
+            padding: .5rem;
+            color:#333;
+            text-decoration: none;
+        }
+        .logo{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btn{
+            cursor: pointer;
+            margin: .5rem;
+            border-radius: .25rem;
+            border: .1rem solid #333;
+            color: #333;
+            background-color: transparent;
+        }
+        .btn:hover{
+            color:#eac;
+            background-color: #333;
+        }
+        .menu{
+            width:100%;
+            max-height: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        .menu.active{ max-height: 900px;}
+        .menu a:hover{
+            background-color: rgba(102,102,102,.5);
+        }
+/*Small Devices - Smartphones*/
 
 /*Medium Devices - Tablets*/
-
+    @media screen and (min-width: 768px){
+    /*Navigation*/
+        nav .btn{
+            display: none;
+        }
+        .menu{
+            width: auto;
+            max-height: 900px;
+            display: flex;
+        }
+    }
 /*Large Devices - Desktop*/
 
 /*Extra Large Devices - HD Desktop*/
+    @media screen and (min-width:1200px){
+    /*Navigation*/
+        nav{ justify-content: space-around }
+    }
