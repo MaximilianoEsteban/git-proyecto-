@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset=ISO-8859-1">
-    <meta http-equiv="X-UA-Compatible" content "IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT Desarrollo Colaborativo</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Git Desarrollo Colaborativo</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 <body>
+    <nav>
+        <ul>
+        <li><a href="Inicio">Inicio</a></li>
+        <li><a href="Images">Galeria</a></li>
+        <li><a href="Contacto">Contacto</a></li>
+    </ul>
+</nav>
     <header id="header">
-
         <h1>GIT</h1>
         <p>Desarrollo Colaborativo</p>
-
-
     </header>
-   
+    <section>
+        <h2>Areas de GIT</h2>
+        <article>
+            <h3>Working Directory</h3>
+            <p>
+                El area de trabajo corresponde a la carpeta del proyecto, donde vamos a realizar la modificaciones que incluyen la creacion, eliminacion y edicion de archivos. Normalmente vamos a trabajar con un editor de codigo y muy rara vez utilizaremos la linea de comandos.
+            </p>
+            <ul class="commands">
+                <li><strong>dir || ls</strong> Muestra el contenido del directorio actual.</li>
+                <li><strong>mkdir &lt;name></strong> Crea una carpeta con el nombre especificado.</li>
+                <li><strong>cd &lt;path></strong> Nos redirige al directorio seleccionado.</li>
+                <li><strong>git init</strong> Inicializa un repositorio de git.</li>
+                <li><strong>rm -rf .git</strong> Elimina el repositorio de git.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Staging Area (INDEX)</h3>
+            <p>
+                El area de control de cambios es la encargada de realizar las <em>capturas del codigo (SNAPSHOT)</em> para que luego sean almacenadas en el repositorio cuando hagamos una confirmacion. Es importante tener en cuenta que solamente podremos reestablecer los archivos a los que le hayamos hecho seguimiento.
+            </p>
+            <ul class="commands">
+                <li>
+                    <strong>git status</strong> muestra el estado de los archivos de Working Directory en relacion a los registrado en el INDEX.
+                    <ul>
+                        <li><strong>untracked</strong> archivo al que no se le esta haciendo seguimiento</li>
+                        <li><strong>staged</strong> archivo agregado al INDEX pero que no posee un commit.</li>
+                        <li><strong>commited</strong> archivo cuyos cambios ya fueron registrados en un commit.</li>
+                        <li><strong>modified</strong> archivo cuyo contenido difiere con lo registrado en el INDEX</li>
+                    </ul>
+                </li>
+                <li><strong>git add &lt;file></strong> agrega el contenido indicado al INDEX para hacerle seguimiento.</li>
+                <li><strong>git blame &lt;file></strong> muestra los datos de autor, commit, ademas de la fecha y hora de confirmacion; asi como tambien los cambios pendientes de un archivo.</li>
+                <li><strong>git rm --cached &lt;file></strong> quita del INDEX el contenido especificado (untracked)</li>
+                <li><strong>git restore --staged &lt;file></strong> restaura el estado del INDEX para los archivos seleccionados</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Repository</h3>
+            <p>
+                Es el area donde se almacenan todas las confirmaciones de cambios en archivos de formato <strong>BLOB (Binary Large Object File)</strong> identificados con un numero de HASH y a los cuales podemos acceder a traves del historial, permitiendonos ver todas las modificaciones realizadas dentro de nuestro proyecto.
+            </p>
+            <ul class="commands">
+                <li><strong>git commit</strong> abre el editor de codigo para realizar la confirmacion de los cambios registrados en el INDEX.</li>
+                <li><strong>git log</strong> muestra el historial de cambios ordenado cronologicamente de manera descendente.</li>
+                <li><strong>git diff &lt;ref></strong> compara y muestra las diferencia entre el Working Directory y el commit especificado.</li>
+                <li><strong>git checkout &lt;ref></strong> mueve el apuntador HEAD a la posicion del commit especificado.</li>
+                <li><strong>git clone &lt;url></strong> crea una copia local de un proyecto almacenado en un repositorio remoto.</li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h2>Apuntadores de GIT</h2>
+        <article>
+            <h3>Head</h3>
+            <p>
+                Apuntador movil
 
+
+            </p>
+        </article>
+
+    </section>
 </body>
 </html>
-
-
-
