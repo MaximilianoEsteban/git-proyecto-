@@ -49,17 +49,21 @@ nav a{
 
 .menu{
     width: 100%;
+    max-height: 0;
     padding: 0;
     list-style: none;
+    overflow: hidden;
+}
+
+.menu.active{
+    max-height: 900px;
 }
 
 .menu a:hover{
     background-color: rgba(102, 102, 102, .5);
 }
 
-.menu.active{
-    max-height: 900px;
-}
+
 
 
 
