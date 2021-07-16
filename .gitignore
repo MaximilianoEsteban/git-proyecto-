@@ -1,0 +1,10 @@
+# carpetas excluidas
+temp/
+tmp/
+node_modules/
+
+# archivos excluidos
+*.txt
+*.temp
+*.tmp
+*.map

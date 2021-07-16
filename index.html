@@ -13,8 +13,9 @@
         <button class="btn">&equiv;</button>
         <ul class="menu">
             <li><a href="#" title="Inicio">Inicio</a></li>
-            <li><a href="gallery.html" title="Galeria">Galery</a></li>
-            <li><a href="#contact" title="Contacto">Contact</a></li>
+            <li><a href="about.html" title="Acerca">Acerca</a></li>
+            <li><a href="gallery.html" title="Galeria">Galeria</a></li>
+            <li><a href="#contact" title="Contacto">Contacto</a></li>
         </ul>
     </nav>
     <header id="header">
@@ -82,7 +83,19 @@
         <article>
             <h3>BRANCH</h3>
             <p>
-                <strong> Apuntador dinamico que nos permte regresar al ultimo commit de una historia determinada, se desplaza automaticamente cada vez que generamos un commit. Podemos crear las ramas que sean necesarias, pero a pesar de las confirmaciones, todas van a tener un commit en comun.</strong>
+                Apuntador dinamico que nos permte regresar al ultimo commit de una historia determinada, se desplaza automaticamente cada vez que generamos un commit. Podemos crear las ramas que sean necesarias, pero a pesar de las confirmaciones, todas van a tener un commit en comun.
+            </p>
+        </article>
+        <article>
+            <h3>STASH</h3>
+            <p>
+                Apuntador que se almacena en Pila temporal de Cambios, este captura el estado de los archivos en el Staging Area y genera un commit que apunta al anterior, donde se genero, y su INDEX. Al reaplicar los cambios se realiza una operacion merge, pero a la inversa, para reestablecer el Working Directory a como estaba antes de utilizar los comandos pertinentes.
+            </p>
+        </article>
+        <article>
+            <h3>TAG</h3>
+            <p>
+                Apuntador estatico que hace referencia a un commit en particular, se utiliza normalmente para el versionado del proyecto y es independiente de las ramas que este posea. Normalmente la estructura de las mismas suele ser <em>"vn.n.n"</em> como por ejemplo: <em>v0.1.0</em> para indicar version principal, subversion y compilacion o caracteristicas respectivamente.
             </p>
         </article>
     </section>
@@ -110,16 +123,30 @@
                     <td>cristiandracedo@hotmail.com</td>
                 </tr>
                 <tr>
-                    <th>Linus Torvald</th>
+                    <td>Linus Torvald</td>
                     <td>Tux</td>
                     <td>lt@linux.com</td>
                 </tr>
                 <tr>
                     <td>Bill Gates</td>
                     <td>Windows</td>
-                    <td>bg@microsoft.com</td>
+                    <td>billg@microsoft.com</td>
                 </tr>
-                <!-- Ingrese sus datos AQUI -->
+                <tr>
+                    <td>German Feriozzi</td>
+                    <td>germanferiozzi</td>
+                    <td>g_feriozzi@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Lucila Bonaventura</td>
+                    <td>LuliBona</td>
+                    <td>lucila_lpb@hotmail.com</td>
+                </tr>
+		<tr>
+                    <td>Jorge Huck</td>
+                    <td>jbuenasideas</td>
+                    <td>jorge@buenasideas.ar</td>
+                </tr>
                 <tr>
                     <td>Maximiliano Esteban</td>
                     <td>MaximilianoEsteban</td>
@@ -129,6 +156,5 @@
         </table>
     </footer>
     <script src="scripts/main.js"></script>
-
-    </body>
-    </html>
+</body>
+</html>
