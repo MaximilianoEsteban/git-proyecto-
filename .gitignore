@@ -8,3 +8,13 @@ node_modules/
 *.temp
 *.tmp
 *.map
+# carpetas excluidas
+temp/
+tmp/
+node_modules/
+
+# archivos excluidos
+*.txt
+*.temp
+*.tmp
+*.map
